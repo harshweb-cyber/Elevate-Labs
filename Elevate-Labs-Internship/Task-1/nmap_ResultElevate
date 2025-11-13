@@ -1,0 +1,49 @@
+# Nmap 7.95 scan initiated Thu Nov 13 06:29:37 2025 as: /usr/lib/nmap/nmap --privileged -sS -oN nmap_ResultElevate 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.0069s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE    SERVICE
+23/tcp    open     telnet
+53/tcp    open     domain
+80/tcp    open     http
+5555/tcp  filtered freeciv
+49152/tcp open     unknown
+MAC Address: 44:C8:74:22:C2:6C (China Mobile Group Device)
+
+Nmap scan report for 192.168.1.2
+Host is up (0.0081s latency).
+All 1000 scanned ports on 192.168.1.2 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 4A:C7:0D:29:37:DA (Unknown)
+
+Nmap scan report for 192.168.1.4
+Host is up (0.0068s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+8009/tcp open  ajp13
+MAC Address: 7C:66:05:59:C7:E9 (Amazon Technologies)
+
+Nmap scan report for 192.168.1.6
+Host is up (0.011s latency).
+All 1000 scanned ports on 192.168.1.6 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: E8:5A:8B:7F:49:6D (Xiaomi Communications)
+
+Nmap scan report for 192.168.1.8
+Host is up (0.0019s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+902/tcp open  iss-realsecure
+912/tcp open  apex-mesh
+MAC Address: 10:68:38:A7:D8:68 (AzureWave Technology)
+
+Nmap scan report for 192.168.1.11
+Host is up (0.0000060s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT    STATE SERVICE
+389/tcp open  ldap
+
+# Nmap done at Thu Nov 13 06:29:52 2025 -- 256 IP addresses (6 hosts up) scanned in 14.47 seconds
