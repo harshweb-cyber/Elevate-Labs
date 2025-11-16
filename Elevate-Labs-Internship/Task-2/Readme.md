@@ -1,4 +1,4 @@
----
+
 
 # Manual Phishing Email Analysis (Must-Do Checks)
 
@@ -7,7 +7,6 @@ Therefore, manual verification is essential.
 
 Below are the **mandatory steps** you must follow to manually inspect any suspicious `.eml` file:
 
----
 
 ## 1. Verify Sender Details
 
@@ -16,8 +15,8 @@ Below are the **mandatory steps** you must follow to manually inspect any suspic
 * Look for small spelling errors (e.g., `micorsoft-support@...`, `amaz0n-help@...`)
 * Confirm the domain is legitimate
 
-  * ✔ `support@paypal.com`
-  * ✘ `support@paypal-secure-check.net`
+  *  `support@paypal.com`
+  *  `support@paypal-secure-check.net`
 
 ### **Compare “From” vs “Reply-To”**
 
@@ -32,7 +31,7 @@ Reply-To: techsupport@outlook.com
 
 Mismatch = **high phishing risk**.
 
----
+
 
 ## 2. Analyze Subject & Body Content
 
@@ -49,7 +48,7 @@ Look for typical phishing triggers:
 * Odd formatting
 * Unprofessional tone
 
----
+
 
 ## 3. Inspect All URLs (Without Clicking)
 
@@ -59,29 +58,29 @@ Hover over links and check if:
 * The URL contains suspicious domains, numbers, or IPs
 
 Examples of bad indicators:
-
+```
 * `http://192.168.0.55/login`
 * `http://microsoft-login-security.xyz`
-
+```
 Use online tools:
 
 * VirusTotal
 * URLScan.io
 
----
+
 
 ## 4. Check Attachments Carefully
 
 Flag suspicious extensions:
-
+```
 * `.exe`, `.bat`, `.cmd`, `.vbs`, `.ps1`
 * `.docm`, `.xlsm` (macro-enabled)
 * `.zip`, `.rar`, `.iso`
 * PDFs with embedded links or scripts
-
+```
 If sender is unknown → **never open attachments**.
 
----
+
 
 ## 5. Inspect Email Headers (Full Header Analysis)
 
@@ -93,11 +92,11 @@ Check:
 
 If they fail:
 
-```
+
 spf=fail
 dkim=none
 dmarc=fail
-```
+
 
 → Sender is likely spoofed.
 
@@ -106,7 +105,7 @@ Also check **Received-From** flow:
 * Look for unexpected foreign servers
 * Multiple untrusted hops
 
----
+
 
 ##  6. Watch for Tracking Pixels or Remote Images
 
@@ -118,7 +117,7 @@ Indicators:
 
 This is commonly used to track victims.
 
----
+
 
 ## 7. Look for Requests for Sensitive Information
 
@@ -132,7 +131,7 @@ Legitimate organizations **never** ask for:
 
 If email asks for these → **it's phishing**.
 
----
+
 
 ## 8. Analyze Tone & Intention
 
@@ -145,7 +144,7 @@ Phishing often uses:
 
 If the message is designed to trigger a quick emotional response → beware.
 
----
+
 
 ## 9. Inspect Branding & Design
 
@@ -158,7 +157,7 @@ Check for:
 
 Compare with a legitimate email from the same company.
 
----
+
 
 ## 10. Recommended Tools for Manual Review
 
@@ -169,11 +168,11 @@ Compare with a legitimate email from the same company.
 * URLscan.io
 * OLETools (office files)
 
----
+
 
 #  Quick Phishing Detection Checklist
 
-```
+
 [ ] Sender address looks legitimate
 [ ] From and Reply-To match
 [ ] No urgent or threatening language
@@ -184,6 +183,5 @@ Compare with a legitimate email from the same company.
 [ ] SPF/DKIM/DMARC pass in header
 [ ] No brand spoofing indicators
 [ ] No request for sensitive information
-```
 
----
+
