@@ -1,4 +1,4 @@
----
+
 
 # **Malware Analysis Report — sample-1077.eml**
 
@@ -8,7 +8,6 @@
 **Verdict:** **No Malware Detected**
 **Platform:** Windows 10 Professional (64-bit)
 
----
 
 # **1. High-Priority Indicators of Compromise (IoCs)**
 
@@ -75,13 +74,13 @@ Examples:
 
 # 📨 **2. General Email Analysis**
 
-### ✔ **Email Type:** RFC 822 (standard email format)
+###  **Email Type:** RFC 822 (standard email format)
 
-### ✔ **Lines:** Very long 347-line email
+###  **Lines:** Very long 347-line email
 
-### ✔ **MIME:** message/rfc822
+###  **MIME:** message/rfc822
 
-### ✔ **Opened with:** Microsoft Outlook
+###  **Opened with:** Microsoft Outlook
 
 No malicious payloads, macros, or attachments were executed.
 
@@ -89,7 +88,7 @@ No malicious payloads, macros, or attachments were executed.
 
 #  **3. Behavioral Analysis Summary**
 
-### **✔ No malicious behavior:**
+### **No malicious behavior:**
 
 * No process injection
 * No file drops
@@ -99,7 +98,7 @@ No malicious payloads, macros, or attachments were executed.
 * No exploit activity
 * No suspicious scripts or macros
 
-### **✔ Network Activity:**
+### **Network Activity:**
 
 Contains only Microsoft & Digicert certificate validation — standard Outlook behavior.
 
@@ -155,7 +154,7 @@ Even though the file is clean, ALWAYS perform these checks:
 * AbuseIPDB
 * URLHaus
 
----
+
 
 #  **6. Conclusion**
 
@@ -168,4 +167,3 @@ The `.eml` file **sample-1077.eml** shows:
 
 This sample is **safe** and contains **no threat indicators**.
 
----

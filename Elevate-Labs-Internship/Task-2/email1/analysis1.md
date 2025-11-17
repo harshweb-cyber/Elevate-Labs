@@ -81,7 +81,7 @@ OUTLOOK.EXE interacted with:
 * Outlook RoamCache XML
 * Cryptnet URL cache files
 
-⚠ **No malicious artifacts dropped**, only standard Microsoft Office/Outlook operations.
+**No malicious artifacts dropped**, only standard Microsoft Office/Outlook operations.
 
 ---
 
@@ -99,7 +99,7 @@ OUTLOOK.EXE interacted with:
 
 ## 4. Behavioral Analysis
 
-### ✔ Observed Normal Behavior
+###  Observed Normal Behavior
 
 * Outlook opened the `.eml` and parsed it.
 * AI Host component (`ai.exe`) triggered—normal for Office add-ins.
@@ -140,7 +140,7 @@ Multiple GET requests made to:
 
 All marked:
 
-> **Reputation: Whitelisted**
+ **Reputation: Whitelisted**
 
 ### **DNS Queries**
 
@@ -194,7 +194,7 @@ No malicious child processes.
 
 Overall verdict by sandbox:
 
-> **No Threats Detected**
+ **No Threats Detected**
 
 ---
 
